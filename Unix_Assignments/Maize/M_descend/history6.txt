@@ -1,0 +1,1000 @@
+  127  grep -v "^#" Mus_musculus.GRCm38.75_chr1.gtf | awk -F "\t" '{print NF; exit}'
+  128  cut -f 2 Mus_musculus.GRCm38.75_chr1.bed | head -n 3
+  129  grep -v "^#" Mus_musculus.GRCm38.75_chr1.gtf | cut -f 1,4,5 | head -n 5
+  130  grep -v "^#" Mus_musculus.GRCm38.75_chr1.gtf | cut -f 1,3,5 | head -n 5
+  131  grep -v "^#" Mus_musculus.GRCm38.75_chr1.gtf | cut -f 1-8 | column -t  | head -n 3
+  132  grep -v "^#" Mus_musculus.GRCm38.75_chr1.gtf | cut -f 1-7 | column -t  | head -n 3
+  133  grep -v "^#" Mus_musculus.GRCm38.75_chr1.gtf | cut -f 1-7 | head -n 3
+  134  column -s "," -t Mus_musculus.GRCm38.75_chr1_bed.csv | head -n 3
+  135  grep -B1 "AGATCGG" contam.fastq | head -n 6
+  136  grep -c 'gene_biotype "snRNA"' Mus_musculus.GRCm38.75_chr1.gtf
+  137  grep -c 'gene "snRNA"' Mus_musculus.GRCm38.75_chr1.gtf
+  138  grep -c 'gene' Mus_mu
+  139  grep -c 'pseudogene' Mus_musculus.GRCm38.75_chr1.gtf
+  140  grep -c 'transcript' Mus_musculus.GRCm38.75_chr1.gtf
+  141  bioawk -cfastx '{print revcomp($seq)}' improper.fabioawk -cfastx '{print revcomp($seq)}' improper.fa
+  142  bioawk -cfastx '{print revcomp($seq)}' improper.fa
+  143  module load bioawk
+  144  bioawk -cfastx '{print revcomp($seq)}' improper.fa
+  145  ls
+  146  cat example_sorted.bed 
+  147  sort -k1,1 -k2,2n example2.bed
+  148  sort -k1,1V -k2,2n example2.bed
+  149  sort -k1,1 -k2,2n -c example.b
+  150  ed
+  151  sort -k1,1 -k2,2n -c example.bed
+  152  sort -k1,1 -k2,2n -c Mus_musculus.GRCm38.75_chr1.gtf
+  153  sort -k1,1 -k2,2n -c example_sorted.bed 
+  154  echo ?$
+  155  echo $?
+  156  sort -k1,1 -k2,2n -c example_sorted.bed 
+  157  echo $?
+  158  cd BCB546_Spring2025/
+  159  cd course-files/
+  160  ls
+  161  cd Week_01/
+  162  ls
+  163  cd SNPs/
+  164  ls
+  165  cd A
+  166  cd AllSNPs/
+  167  ls
+  168  cd ../../..
+  169  ls
+  170  cd Week_01/
+  171  ls
+  172  cd in_class/
+  173  ls
+  174  cd zmays-snps/
+  175  ls
+  176  touch seqs/zmays{A,B,C}_R{1,2}.fastq
+  177  cd data
+  178  touch seqs/zmays{A,B,C}_R{1,2}.fastq
+  179  ls
+  180  cd seqs/
+  181  ls
+  182  cd ../..
+  183  ls
+  184  cd
+  185  cd BCB546_Spring2025/
+  186  cd course-files/
+  187  cd Week_01/
+  188  ls
+  189  cat file1 file2 | grep "AGGATA" | wc
+  190  cd
+  191  ;s
+  192  ls
+  193  mkdir Unix Assignment
+  194  ls
+  195  rm -f Unix Assignment
+  196  rm -rf Unix Assignment
+  197  ls
+  198  mkdir Unix/ Assignment
+  199  ls
+  200  rm -rf Unix Assignment
+  201  ls
+  202  mkdir Unix\ Assignment
+  203  ls
+  204  cd Unix\ Assignment/
+  205  ls
+  206  cd
+  207  cd BCB546_Spring2025/
+  208  cd assignments/
+  209  ls
+  210  cd UNIX_Assignment/
+  211  ls
+  212  cd
+  213  ;s
+  214  ls
+  215  cd Unix\ Assignment/
+  216  ls
+  217  cp UNIX_Assignment <UNIX\ Assignment>
+  218  cp UNIX_Assignment <"UNIX Assignment">
+  219  ls
+  220  cd
+  221  ls
+  222  rm -rf Unix\ Assignment
+  223  ls
+  224  mkdir Unix_Assignment
+  225  ls
+  226  cp UNIX_Assignment <UNIX_Assignment>
+  227  cp UNIX_Assignment UNIX_Assignment
+  228  ls
+  229  cp -r UNIX_Assignment <UNIX_Assignment>
+  230  cd
+  231  ls
+  232  cp -r /home/BCB546_Spring2025/assignments/UNIX_Assignment /home/Unix_Assignment
+  233  ls
+  234  cd BCB546_Spring2025/
+  235  ls
+  236  cd assignments/
+  237  ls
+  238  cd UNIX_Assignment/
+  239  ls
+  240  mkdir TXT
+  241  ls
+  242  mv fang_et_al_genotypes.txt snp_position.txt transpose.awk transposed_genotypes.txt > Assignment1
+  243  ls
+  244  cat Assignment1 
+  245  mv fang_et_al_genotypes.txt snp_position.txt transpose.awk transposed_genotypes.txt >> TXT
+  246  cd TXT
+  247  ls
+  248  cd ..
+  249  rm -rf Assignment1 
+  250  ls
+  251  mv fang_et_al_genotypes.txt snp_position.txt transpose.awk transposed_genotypes.txt TXT/
+  252  ls
+  253  cd
+  254  ls
+  255  git clone https://github.com/EEOB-BioData/BCB546_Spring2025
+  256  ls
+  257  cd BCB546_Spring2025/
+  258  git pull origin main
+  259  ls
+  260  cd assignments/
+  261  ls
+  262  cd Uq
+  263  cd UNIX_Assignment/
+  264  ls
+  265  cd TXT
+  266  ls
+  267  cp fang_et_al_genotypes.txt snp_position.txt transpose.awk transposed_genotypes.txt UNIX_Assignment/
+  268  ls
+  269  cd
+  270  rm -rf BCB546_Spring2025/
+  271  ls
+  272  git clone https://github.com/EEOB-BioData/BCB546_Spring2025
+  273  cd BCB546_Spring2025/
+  274  ls
+  275  cd assignments/
+  276  ls
+  277  cd UN
+  278  cd UNIX_Assignment/
+  279  ls
+  280  mk dir myAssignment1
+  281  mkdir myAssignment1
+  282  ls
+  283  cp snp_position.txt fang_et_al_genotypes.txt transpose.awk transposed_genotypes.txt myAssignment1/
+  284  ls
+  285  cd myAssignment1/
+  286  ls
+  287  rm -rf Unix_Assignment/
+  288  ls
+  289  cd BCB546_Spring2025/
+  290  cd assignments/
+  291  ls
+  292  cd UNIX_Assignment/
+  293  ls
+  294  cd myAssignment1/
+  295  ls -n
+  296  head -n 3 fang_et_al_genotypes.txt 
+  297  head fang_et_al_genotypes.txt 
+  298  head -n 6 fang_et_al_genotypes.txt 
+  299  head transposed_fang_et_al_genotypes.txt 
+  300  head transposed_genotypes.txt 
+  301  head -n 3 transposed_genotypes.txt 
+  302  head snp_position.txt 
+  303  head -n 3 snp_position.txt 
+  304  tail snp_position.txt 
+  305  less transposed_genotypes.txt 
+  306  head -n 1 snp_position.txt 
+  307  head -n 1 transposed_genotypes.txt 
+  308  head -n 1 fang_et_al_genotypes.txt 
+  309  awk -F "\t" '{print NF; exit}' transposed_genotypes.txt 
+  310  head -n 1 snp_position.txt 
+  311  tail -n +6 snp_position.txt | awk -F "\t" '{print NF; exit}'
+  312  head -n +6 snp_position.txt | awk -F "\t" '{print NF; exit}'
+  313  head -n +6 transposed_genotypes.txt | awk -F "\t" '{print NF; exit}'
+  314  tail -n +6 transposed_genotypes.txt | awk -F "\t" '{print NF; exit}'
+  315  grep -v "^#" snp_position.txt | awk -F "\t" '{print NF; exit}'
+  316  column -s -t snp_position.txt | head -n 3
+  317  column -s "," -t Mus_musculus.GRCm38.75_chr1_bed.csv | head -n 3
+  318  q
+  319  column -t snp_position.txt | head -n 3
+  320  column -s -t snp_position.txt | head -n 3
+  321  column -t snp_position.txt 
+  322  less | column -t snp_position.txt 
+  323  cat snp_position.txt 
+  324  column -s -t snp_position.txt | head -n 3
+  325  column -t snp_position.txt | head -n 3
+  326  file snp_position.txt 
+  327  file snp_position.txt fang_et_al_genotypes.txt transposed_genotypes.txt 
+  328  module load bioawk
+  329  bioawk -cfastx '{print revcomp($seq)}' snp_position.txt 
+  330  echo $?
+  331  bioawk -cfastx '{print revcomp($seq)}' transposed_genotypes.txt 
+  332  hexdump -c snp_position.txt 
+  333  column -t fang_et_al_genotypes.txt | head -n 3
+  334  column -t transposed_genotypes.txt | head -n 3
+  335  cat snp_position.txt 
+  336  head -n 1 snp_position.txt 
+  337  head -n 1 transposed_genotypes.txt 
+  338  head -n 1 fang_et_al_genotypes.txt 
+  339  head -n 1 snp_position.txt 
+  340  cd BCB546_Spring2025/
+  341  cd assignments/
+  342  cd UNIX_Assignment/
+  343  ls
+  344  cd myAssignment1/
+  345  ls
+  346  column -t snp_position.txt | head -n 3
+  347  column -t snp_position.txt | head -n 1
+  348  column -t transposed_genotypes.txt
+  349  column -t transposed_genotypes.txt | head -n 1
+  350  column -t snp_position.txt | head -n 1
+  351  column -t transposed_genotypes.txt | head -n 1
+  352  less transposed_genotypes.txt | head -n 1
+  353  column -t transposed_genotypes.txt | tail -n 1
+  354  sort transposed_genotypes.txt | uniq
+  355  sort transposed_genotypes.txt | uniq | head -n 1
+  356  sort transposed_genotypes.txt | uniq | tail -n 1
+  357  head -n 1 transposed_genotypes.txt 
+  358  cd BCB546_Spring2025/
+  359  cd assignments/
+  360  cd UNIX_Assignment/
+  361  cd myAssignment1/
+  362  ls
+  363  for i in *.txt; do tail -n +2 $i >> $i.tail; done
+  364  ls
+  365  cat snp_position.txt
+  366  head -n 2 snp_position.txt
+  367  head -n 2 snp_position.txt.tail
+  368  cat transposed_genotypes.txt
+  369  head -n 1 transposed_genotypes.txt
+  370  head -n 1 transposed_genotypes.txt.tail 
+  371  cat *.tail > AllSNPs.txt
+  372  ls
+  373  rm -rf AllSNPs.txt 
+  374  ls
+  375  cat *.tail > AllGenotypes.txt
+  376  ls
+  377  $ awk -F "\t" '{print NF; exit}' snp_position.txt.tail
+  378  awk -F "\t" '{print NF; exit}' snp_position.txt.tail
+  379  awk -F "\t" '{print NF; exit}' AllGenotypes.txt 
+  380  ls
+  381  pwd
+  382  ls
+  383  rm -rf fang_et_al_genotypes.txt.tail 
+  384  rm -rf AllGenotypes.txt 
+  385  ls
+  386  cd
+  387  ls
+  388  cd bds-files/
+  389  ls
+  390  cd chapter-07-unix-data-tools/
+  391  exit
+  392  cd bds-files/chapter-07-unix-data-tools/
+  393  ls
+  394  awk 'NR >= 3 && NR <= 5' example.bed
+  395  cat example.bed 
+  396  awk '!/^#/ { print $1 "\t" $4-1 "\t" $5 }' Mus_musculus.GRCm38.75_chr1.gtf | head -n 3
+  397  awk '/Lypla1/ { feature[$3] += 1}; END { for (k in feature) print k "\t" feature[k] }' Mus_musculus.GRCm38.75_chr1.gtf
+  398  module load bioawk
+  399  bioawk -c gff '$feature ~ /gene/ && $source ~ /protein_coding/ {print $seqname,$end-$start}' Mus_musculus.GRCm38.75_chr1.gtf | head -n 4
+  400  ls 
+  401  bioawk -c fastx '{print ">"$name"\n"$seq}' contam.fastq | head -n 4
+  402  cat contam.fastq 
+  403  ls
+  404  head -n 4 genotypes.txt
+  405   bioawk -c hdr '$ind_A == $ind_B {print $id}' genotypes.txt
+  406  xt head -n 3 chroms.txt
+  407  cd bds-files/
+  408  cd chapter-07-unix-data-tools/
+  409  ls
+  410  pwd
+  411  whoami
+  412  htop
+  413  ls
+  414  cd BCB546_Spring2025/
+  415  cd assignments/
+  416  cd UNIX_Assignment/
+  417  cd myAssignment1/
+  418  ls
+  419  head -n 1 snp_position.txt
+  420  head -n 2 snp_position.txt
+  421  head -n 3 snp_position.txt
+  422  module load bioawk
+  423  bioawk -c fastx 'END{print NR}' snp_position.txt
+  424  echo $?
+  425  awk 'Chromosome == 2' snp_position.txt
+  426  ls
+  427  head -n 3 snp_position.txt
+  428  grep "ZMMIL" fang_et_al_genotypes.txt | cut -f3 | sort | uniq -c
+  429  grep "ZMMLR" fang_et_al_genotypes.txt | cut -f3 | sort | uniq -c
+  430  less snp_position.txt
+  431  cd BCB546_Spring2025/
+  432  cd as
+  433  cd assignments/
+  434  cd UNIX_Assignment/
+  435  cd myAssignment1/
+  436  head -n 3 transposed_genotypes.txt
+  437  head -n 1 snp_position.txt
+  438  head -n 1 transposed_genotypes.txt
+  439  head -n 1 fang_et_al_genotypes.txt 
+  440  cd BCB546_Spring2025/
+  441  cd assignments/
+  442  cd UNIX_Assignment/
+  443  cd myAssignment1/
+  444  set wrap
+  445  ls
+  446  ll
+  447  cd BCB546_Spring2025/
+  448  cd assignments/
+  449  cd UNIX_Assignment/
+  450  cd myAssignment1/
+  451  vim transposed_genotypes.txt
+  452  vim snp_position.txt
+  453  cd BCB546_Spring2025/
+  454  cd assignments/
+  455  cd UNIX_Assignment/
+  456  cd myAssignment1/
+  457  ls
+  458  tail -n +2 snp_position.txt
+  459  cd BCB546_Spring2025/
+  460  cd assignments/
+  461  cd UNIX_Assignment/
+  462  cd myAssignment1/
+  463  ls
+  464  head -n 1 transposed_genotypes.txt
+  465  head -n 1 snp_position.txt
+  466  ls
+  467  head -n 1 transposed_genotypes.txt
+  468  vim transposed_genotypes.txt
+  469  cd BCB546_Spring2025/
+  470  cd assignments/
+  471  cd UNIX_Assignment/
+  472  cd myAssignment1/
+  473  vim snp_position.txt
+  474  tail -n +3 transposed_genotypes.txt > transposed_1header.txt
+  475  ll
+  476  vim transposed_1header.txt 
+  477  sed 's/Group/SNP_ID/g' transposed_1header.txt 
+  478  vim transposed_1header.txt 
+  479  rm -rf transposed_1header.txt 
+  480  ls
+  481  tail -n +3 transposed_genotypes.txt > transposed_1header.txt
+  482  ll
+  483  sed 's/Group/SNP_ID' transposed_1header.txt 
+  484  echo $?
+  485  sed 's/Group/SNP_ID' transposed_1header.txt | head -n 1
+  486  sed 's/Group/SNP_ID/g' transposed_1header.txt | head -n 1
+  487  vim transposed_1header.txt 
+  488  sed 's/Group/SNP_ID/g' transposed_1header.txt | head -n 1 > transposed_1head.txt
+  489  ls
+  490  vim transposed_1head.txt 0
+  491  vim transposed_1head.txt
+  492  vim transposed_1head.txt 
+  493  sed 's/Group/SNP_ID/g' transposed_1header.txt | head -n -1 > transposed_1head.txt
+  494  vim transposed_1head.txt 
+  495  join -1 1 -2 1 Snp_noheader.txt transposed_1head.txt > joined_changedheader.txt
+  496  :vim joined_changedheader.txt 
+  497  vim joined_changedheader.txt 
+  498  ll
+  499  join -1 1 -2 1 snp_position.txt transposed_1head.txt > joined_changedheader.txt
+  500  ll
+  501  vim joined_changedheader.txt 
+  502  sed 's/Group/SNP_ID/g' transposed_1header.txt | head -n +1 > transposed_1head.txt
+  503  wc transposed_1head.txt 
+  504  sed 's/Group/SNP_ID/g' transposed_1header.txt > transposed_1head.txt
+  505  wc transposed_1head.txt 
+  506  join -1 1 -2 1 snp_position.txt transposed_1head.txt > joined_changedheader.txt
+  507  wc joined_changedheader.txt 
+  508  vim joined_changedheader.txt 
+  509  column -t joined_changedheader.txt | head -n 3
+  510  join -1 1 -2 1 -t $'\t' snp_position.txt transposed_1head.txt > join_lengths.txt
+  511  wc join_lengths.txt 
+  512  vim join_lengths.txt 
+  513  vim column -t joined_changedheader.txt | head -n 3
+  514  cut -d $' ' --complement -f2 joined_changedheader.txt > Joined_nocdv.txt
+  515  vim Joined_nocdv.txt 
+  516  wc Joined_nocdv.txt 
+  517  rf -rm join_lengths.txt 
+  518  rm -rf join_lengths.txt 
+  519  ll
+  520  less Joined_nocdv.txt 
+  521  grep 'ZMMIL' Joined_nocdv.txt 
+  522  grep -c 'ZMMIL' Joined_nocdv.txt 
+  523  grep -f 'ZMMIL' Joined_nocdv.txt 
+  524  grep -o 'ZMMIL' Joined_nocdv.txt 
+  525  wc 'ZMMIL' Joined_nocdv.txt 
+  526  cd BCB546_Spring2025/
+  527  cd assignments/
+  528  cd UNIX_Assignment/
+  529  cd myAssignment1/
+  530  ll
+  531  vim transposed_genotypes.txt
+  532  ll
+  533  join -1 1 -2 1 Snp_noheader.txt transposed_genotypes_noheader.txt > joined_noheader.txt
+  534  ls
+  535  vim joined_noheader.txt 
+  536  history > history.txt
+  537  vim history.txt 
+  538  cd BCB546_Spring2025/
+  539  cd assignments/
+  540  cd UNIX_Assignment/
+  541  cd myAssignment1/
+  542  ls
+  543  ll
+  544  tail -n +2 snp_position.txt
+  545  tail -n +2 snp_position.txt > Snp_noheader.txt
+  546  vim Snp_noheader.txt 
+  547  cd BCB546_Spring2025/
+  548  cd assignments/
+  549  cd UNIX_Assignment/
+  550  cd myAssignment1/
+  551  tail -n +4 transposed_genotypes.txt > transposed_genotypes_noheader.txt
+  552  ls
+  553  vim transposed_genotypes_noheader.txt 
+  554  cd BCB546_Spring2025/
+  555  cd assignments/
+  556  cd UNIX_Assignment/
+  557  cd myAssignment1/
+  558  vim transposed_genotypes.txt
+  559  cut -f 2 joined_changedheader.txt | head -n 3
+  560  vim joined_changedheader.txt 
+  561  paste <(cut -d ' ' -f 1,3,4 joined_changedheader.txt) <(cut -d ' ' -f 3 joined_changedheader.txt) > joined.txt
+  562  ll
+  563  vim joined.txt 
+  564  paste <(cut -d ' ' -f 1,3,4 joined_changedheader.txt) <(cut -d ' ' -f 2 joined_changedheader.txt) > joined.txt
+  565  vim joined.txt 
+  566  wc joined_changedheader.txt 
+  567  wc joined_noheader.txt 
+  568  wc snp_position.txt
+  569  wc transposed_1head.txt 
+  570  wc transposed_1header.txt 
+  571  vim transposed_1header.txt 
+  572  vim transposed_1head.txt 
+  573  wc joined_changedheader.txt 
+  574  paste <(cut -d ' ' -f 1,3,4 joined_changedheader.txt) <(cut -d ' ' -f 2 joined_changedheader.txt) > joined.txt
+  575  wc joined.txt 
+  576  history > history1.txt
+  577  vim history1.txt 
+  578  cd BCB546_Spring2025/
+  579  cd assignments/
+  580  cd UNIX_Assignment/
+  581  cd myAssignment1/
+  582  vim Joined_nocdv.txt 
+  583   cd BCB546_Spring2025/assignments//UNIX_Assignment//myAssignment1/
+  584  cd BCB546_Spring2025/assignments//UNIX_Assignment//myAssignment1/
+  585  ls
+  586   cd BCB546_Spring2025/assignments//UNIX_Assignment//myAssignment1/
+  587  grep "ZMMIL" Joined_nocdv.txt | awk '{print "ZMMIL is in column: " $2}'
+  588  grep "ZMMIL" Joined_nocdv.txt | awk '{print "ZMMIL is in column: " $1}'
+  589  awk -F "\t" '{print NF; exit}' Joined_nocdv.txt 
+  590  awk -F " " '{print NF; exit}' Joined_nocdv.txt 
+  591  awk '{for(i=1;i<=NF;i++) if ($i == "ZMMIL") print "Found at column " i}' Joined_nocdv.txt
+  592  awk -F "\t" '{print NF; exit}' Joined_nocdv.txt 
+  593  awk -F " " '{print NF; exit}' Joined_nocdv.txt 
+  594  cut -d $' ' -f2507-2796 joined_changedheader.txt > ZMMIL.txt
+  595  vim ZMMIL.txt 
+  596  rm -rf ZMMIL.txt
+  597  cut -d $' ' -f2507-2796 Joined_nocdv.txt > ZMMIL.txt
+  598  vim ZMMIL.txt 
+  599  awk '{for(i=1;i<=NF;i++) if($i == "ZMMIL") count++} END{print count}' Joined_nocdv.txt 
+  600  awk '{for(i=1;i<=NF;i++) if ($i == "ZMMLR") print "Found at column " i}' Joined_nocdv.txt
+  601  cut -d $' ' -f1224-2479 Joined_nocdv.txt > ZMMLR.txt
+  602  wc ZMMLR.txt 
+  603  vim ZMMLR.txt 
+  604  awk '{for(i=1;i<=NF;i++) if ($i == "ZMMMR") print "Found at column " i}' Joined_nocdv.txt
+  605  cut -d $' ' -f2480-2506 Joined_nocdv.txt > ZMMMR.txt
+  606  wc ZMMMR
+  607  ll
+  608  wc ZMMMR.txt
+  609  awk -F " " '{print NF; exit}' Joined_nocdv.txt ZMMMR.txt ZMMLR.txt ZMMIL.txt 
+  610  vim joined.txt
+  611  wc
+  612  wc Maize.txt 
+  613  awk -F " " '{print NF; exit}' Joined_nocdv.txt ZMMMR.txt ZMMLR.txt ZMMIL.txt Maize.txt 
+  614  wc Joined_nocdv.txt ZMMMR.txt ZMMLR.txt ZMMIL.txt Maize.txt 
+  615  wc ZMMMR.txt 
+  616  wc ZMMLR.txt 
+  617  head -n 1ZMMLR | tr '\t' ' '| wc -w
+  618  head -n 1 ZMMLR.txt | tr '\t' ' '| wc -w
+  619  head -n 1 maize.txt | tr '\t' ' '| wc -w
+  620  head -n 1 Maize.txt | tr '\t' ' '| wc -w
+  621  cut -d $' ' -f1,2,3,2480-2506 Joined_nocdv.txt > ZMMMR1.txt
+  622  vim ZMMMR1.txt 
+  623  wc ZMMMR1.txt 
+  624  rm -rf ZMMMR1.txt 
+  625  sort -k2,2n Maize.txt > Maize_sort.txt
+  626  vim Maize_sort.txt 
+  627  history > history2.txt
+  628  wc Maize_sort.txt 
+  629  head -n 1 Maize_sort.txt | tr '\t' ' '| wc -w
+  630  head -n 1 Maize.txt | tr '\t' ' '| wc -w
+  631  rm -rf Maize_sort.txt 
+  632  sort -k2,2n Maize.txt > Maize_sort.txt
+  633  head -n 1 Maize.txt | tr '\t' ' '| wc -w
+  634  head -n 1 Maize_sort.txt | tr '\t' ' '| wc -w
+  635  awk -F "\t" '{print NF; exit}' Maize.txt  Maize_sort.txt 
+  636  rm -rf Maize_sort.txt 
+  637  sort -k2,2 Maize.txt > Maize_sort.txt
+  638  head -n 1 Maize_sort.txt | tr '\t' ' '| wc -w
+  639  rm -rf Maize_sort.txt 
+  640  head -n1 Maize.txt && tail -n +2 Maize.txt | sort -k2,2n) > Maize_sorted.txt
+  641  (head -n1 Maize.txt && tail -n +2 Maize.txt | sort -k2,2n) > Maize_sorted.txt
+  642  head -n 1 Maize_sorted.txt | tr '\t' ' '| wc -w
+  643  vim Maize_sorted.txt 
+  644  cd BCB546_Spring2025/
+  645  cd assignments//UNIX_Assignment//myAssignment1/
+  646  pwd
+  647  cd
+  648  vim history1.txt 
+  649  history>history2.txt
+  650  cat history2.txt 
+  651  cd BCB546_Spring2025/assignments/UNIX_Assignment/
+  652  ll
+  653  head -n 1 transposed_genotypes.txt
+  654  grep "ZMMIL" fang_et_al_genotypes.txt | cut -f3 | sort | uniq -c
+  655  grep "ZMMLR" fang_et_al_genotypes.txt | cut -f3 | sort | uniq -c
+  656  grep "ZMMMR" fang_et_al_genotypes.txt | cut -f3 | sort | uniq -c
+  657    grep -v "^#" snp_position.txt | awk -F "\t" '{print NF; exit}'
+  658  tail -n +6 transposed_genotypes.txt | awk -F "\t" '{print NF; exit}'
+  659  head -n +6 transposed_genotypes.txt | awk -F "\t" '{print NF; exit}'
+  660  column -s -t snp_position.txt | head -n 3
+  661   tail -n +2 snp_position.txt
+  662   head -n 1 snp_position.txt
+  663   head -n +1 snp_position.txt
+  664   head -n 2 snp_position.txt
+  665   head -n +2 snp_position.txt
+  666  tail -n +2 snp_position.txt
+  667  cd BCB546_Spring2025/assignments/UNIX_Assignment/myAssignment1/
+  668  ls
+  669  vim history.txt
+  670  vim history2.txt 
+  671  wc joined_changedheader.txt 
+  672  cd
+  673  ls
+  674  cat history1.txt 
+  675  cat history2.txt 
+  676  cat history3.txt
+  677  ls
+  678  cat history3
+  679  cd BCB546_Spring2025/assignments/UNIX_Assignment/myAssignment1/
+  680  ls
+  681  ll
+  682  wc joined_changedheader.txt 
+  683  wc joined.tx
+  684  wc joined.txT
+  685  wc joined.txt
+  686  cat history2.txt
+  687  wc joined_changedheader.txt 
+  688  join -1 1 -2 1 -t $'\t' snp_position.txt transposed_1head.txt > join1_lengths.txt
+  689  wc join1_lengths.txt 
+  690  cd BCB546_Spring2025/assignments/UNIX_Assignment/
+  691  lls
+  692  ls
+  693  cp snp_position.txt UNIX_Assignment.md transposed_genotypes.txt > UNIX
+  694  ls
+  695  cd UN
+  696  cd UNIX
+  697  rm -rf UNIX
+  698  ls
+  699  cp snp_position.txt UNIX_Assignment.md transposed_genotypes.txt UNIX
+  700  ls
+  701  mkdir UNIX
+  702  cp snp_position.txt UNIX_Assignment.md transposed_genotypes.txt UNIX
+  703  ls
+  704  cd UNIX/
+  705  ls
+  706  tail -n +3 transposed_genotypes.txt > transposed_1header.txt
+  707  vim transposed_1header.txt 
+  708  wc transposed_1header.txt 
+  709   awk -F "\t" '{print NF; exit}' transposed_1header.txt
+  710  tail -n +6 transposed_1header.txt | awk -F "\t" '{print NF; exit}'
+  711  sed 's/Group/SNP_ID/g' transposed_1header.txt
+  712  vim transposed_1header.txt 
+  713  sed 's/Group/SNP_ID/g' transposed_1header.txt | head -n 1
+  714  vim transposed_1header.txt 
+  715  vim transposed_genotypes.txt 
+  716  vim snp_position.txt 
+  717  vim transposed_1header.txt 
+  718  wc transposed_1header.txt 
+  719  tail -n +6 transposed_1header.txt | awk -F "\t" '{print NF; exit}'
+  720  head -n 1 snp_position.txt 
+  721  se 's/Group/SNP_ID/g' transposed_1header.txt | head -n -1 > transposed_1head
+  722  sed 's/Group/SNP_ID/g' transposed_1header.txt | head -n -1 > transposed_1head.txt
+  723  ls
+  724  ll
+  725  vim transposed_1head.txt 
+  726  join -1 1 -2 1 snp_position.txt transposed_1head.txt > joined.txt
+  727  vim joined.txt 
+  728  wc joined.txt 
+  729  rm -rf joined.txt
+  730  ls
+  731  join -1 1 -2 1 -t $'\t' snp_position.txt transposed_>joined.txt
+  732  join -1 1 -2 1 -t $'\t' snp_position.txt transposed_1head.txt>joined.txt
+  733  wc joined.txt 
+  734  join -1 1 -2 1 -a snp_position.txt transposed_1head.txt > joined.txt
+  735  wc joined.txt 
+  736  join -1 1 -2 1 -a 1 snp_position.txt transposed_1head.txt > joined.txt
+  737  wc joined.txt 
+  738  vim joined.txt 
+  739  join -1 1 -2 1 -t $'\t' snp_position.txt transposed_1head.txt > join_lengths.txt
+  740  wc join_lengths.txt 
+  741  vim joined.txt 
+  742  tail -n +6 joined.txt | awk -F "\t" '{print NF; exit}'
+  743   awk -F "\t" '{print NF; exit}' joined.txt 
+  744   awk -F "\t" '{print NF; exit}' join_lengths.txt 
+  745  join -1 1 -2 1 snp_position.txt transposed_1head.txt > joined_changedheader.txt
+  746  wc joined_changedheader.txt 
+  747  rm -rf joined_changedheader.txt 
+  748  join -1 1 -2 1 -t $'\t' snp_position.txt transposed_1head.txt > join_lengths.txt
+  749  wc join_lengths.txt 
+  750  rm -ef join_lengths.txt 
+  751  rm -rf join_lengths.txt 
+  752  ls
+  753  join -1 1 -2 1 snp_position.txt transposed_1head.txt > joined_changedheader.txt
+  754  wc joined_changedheader.txt 
+  755  ll
+  756  join -1 1 -2 1 -t $'\t' snp_position.txt transposed_1head.txt > join_lengths.txt
+  757  wc join_lengths.txt 
+  758  wc joined.txt 
+  759  rm -rf joined_changedheader.txt transposed_1head 
+  760  ls
+  761  rm -rf join_lengths.txt 
+  762  vim joined.txt 
+  763  cd ..
+  764  cd myAssignment1/
+  765  wc joined_changedheader.txt 
+  766  cd ..
+  767  cd UNIX/
+  768  vim joined.txt 
+  769  cd bds-files/chapter-07-unix-data-tools/
+  770  grep -v "^#" Mus_musculus.GRCm38.75_chr1.gtf | cut -f3 | sort | uniq -c
+  771  grep -v "^#" Mus_musculus.GRCm38.75_chr1.gtf | sort | uniq -c
+  772  cat example.bed 
+  773  awk 'BEGIN{ s = 0 }; { s += ($3-$2) }; END{ print "mean: " s/NR };' example.bed
+  774  sort -k1,1 -k2,2n -c example_sorted.bed
+  775  sort -k1,1 -k2,2n -r example_sorted.bed
+  776  sort -k1,1 -k2,2n example_sorted.bed
+  777  cd BCB546_Spring2025/assignments/UNIX_Assignment/UNIX/
+  778  wc transposed_1head.txt 
+  779  wc transposed_1header.txt 
+  780  vim transposed_1header.txt 
+  781  wc transposed_1head.txt wc transposed_1header.txt 
+  782  vim transposed_1head.txt 
+  783  sed 's/Group/SNP_ID/g' transposed_1header.txt | head -n +1 > transposed_1head.txt
+  784  wc transposed_1head.txt 
+  785  vim transposed_1head.txt 
+  786  sed 's/Group/SNP_ID/g' transposed_1header.txt | head -n + 1 > transposed_1head.txt
+  787  sed 's/Group/SNP_ID/g' transposed_1header.txt | head -n +1 > transposed_1head.txt
+  788  wc transposed_1head.txt 
+  789  sed 's/Group/SNP_ID/g' transposed_1header.txt > transposed_1head.txt
+  790  wc transposed_1head.txt 
+  791  join -1 1 -2 1 snp_position.txt transposed_1head.txt > joined_changedheader.txt
+  792  wc joined_changedheader.txt 
+  793  join -1 1 -2 1 -t $'\t' snp_position.txt transposed_1head.txt > join_lengths.txt
+  794  wc join_lengths.txt 
+  795  vim join_lengths.txt 
+  796  vim joined_changedheader.txt 
+  797  wc join_lengths.txt joined_changedheader.txt 
+  798  tail -n +6 transposed_1header.txt | awk -F "\t" '{print NF; exit}'
+  799  tail -n +6 transposed_1head.txt | awk -F "\t" '{print NF; exit}'
+  800  tail -n +6 joined_changedheader.txt join_lengths.txt | awk -F "\t" '{print NF; exit}'
+  801  tail -n +6 joined_changedheader.txt | awk -F "\t" '{print NF; exit}'
+  802  tail -n +6 join_lengths.txt | awk -F "\t" '{print NF; exit}'
+  803  ls
+  804  rm -rf joined.txt joined_changedheader.txt 
+  805  ls
+  806  grep 'ZMMIL' join_lengths.txt
+  807  grep -c 'ZMMIL' join_lengths.txt
+  808  grep -f 'ZMMIL' join_lengths.txt
+  809  grep -o 'ZMMIL' join_lengths.txt
+  810  wc 'ZMMIL' join_lengths.txt 
+  811  awk -F "\t" '{print NF; exit}' join_lengths.txt 
+  812  awk -F " " '{print NF; exit}' join_lengths.txt 
+  813  awk '{for(i=1;i<=NF;i++) if ($i == "ZMMIL") print "Found at column " i}' join_lengths.txt 
+  814  awk '{for(i=1;i<=NF;i++) if ($i == "ZMMLR") print "Found at column " i}' join_lengths.txt 
+  815  awk '{for(i=1;i<=NF;i++) if ($i == "ZMMMR") print "Found at column " i}' join_lengths.txt 
+  816  awk '{for(i=1;i<=NF;i++) if($i == "ZMMIL") count++} END{print count}' join_lengths.txt 
+  817  awk '{for(i=1;i<=NF;i++) if($i == "ZMMLR") count++} END{print count}' join_lengths.txt 
+  818  awk '{for(i=1;i<=NF;i++) if($i == "ZMMMR") count++} END{print count}' join_lengths.txt 
+  819  head -n 1 transposed_genotypes.txt | tr '\t' ' '| wc -w
+  820  head -n 1 join_lengths.txt | tr '\t' ' '| wc -w
+  821  cut -d $' ' -f1,2,3,2480-2506 Joined_nocdv.txt > ZMMMR1.txt
+  822  vim join_lengths.txt 
+  823  cut -d $' ' -f1,3,4,2508-2797,1225-2480,2481-2507 join_lengths.txt > maize.txt
+  824  vim maize.txt 
+  825  ls
+  826  head -n 1 maize.txt 
+  827  cut -d $' ' --complement -f1,3,4,2508-2797,1225-2480,2481-2507 join_lengths.txt > maize.txt
+  828  head -n 1 maize.txt 
+  829  ls
+  830  cut -d $' ' -f2481-2507 join_lengths.txt > ZMMMR1.txt
+  831  head -n 1 ZMMMR1.txt 
+  832  ls
+  833  rm -rf maize.txt ZMMMR1.txt 
+  834  ls
+  835  cut -d $'\t' -f2508-2797 join_lengths.txt > ZMMIL.txt
+  836  wc ZMMIL.txt 
+  837  head -n 1 ZMMIL.txt 
+  838  cut -d $'\t' -f1,3,4,2508-2797,1225-2480,2481-2507 join_lengths.txt > maize.txt
+  839  vim maize.txt 
+  840  less maize.txt 
+  841  $ grep -o "ZMMIL" maize.txt 
+  842  grep -o "ZMMIL" maize.txt 
+  843  wc maize.txt 
+  844  tail -n +6 maize.txt | awk -F "\t" '{print NF; exit}'
+  845  awk -F "\t" '{print NF; exit}' maize.txt 
+  846  cut -d $'\t' -f1,3,4,2508-2797,1225-2480,2481-2507 join_lengths.txt > maize.txt
+  847  head -n 1 maize.txt 
+  848  sort -k2,2n maize.txt > maize_sort.txt
+  849  vim maize.txt 
+  850  vim maize_sort.txt 
+  851  wc maize_sort.txt 
+  852  tail -n +6 maize_sort.txt | awk -F "\t" '{print NF; exit}'
+  853  (head -n 1 maize.txt && tail -n +2 maize.txt | sort -k2,2n) > Maize_sorted.txt
+  854  vim maize.txt 
+  855  vim Maize_sorted.txt 
+  856  grep "1" Maize_sorted.txt > Maize_chr1.txt
+  857  wc Maize_chr1.txt 
+  858  vim Maize_chr1.txt 
+  859  rm -rf Maize_chr1.txt 
+  860  grep -v "^#" maize.txt | cut -f3 | sort | uniq -c
+  861  grep -v "^#" maize.txt | cut -f2 | sort | uniq -c
+  862  grep -v "^#" Maize_sorted.txt | cut -f2 | sort | uniq -c
+  863  module load bioawk
+  864  ls
+  865  awk '$2 == 1' Maize_sorted.txt > Maize_chr1.txt
+  866  wc Maize_chr1.txt 
+  867  awk -F "\t" '{print NF; exit}' Maize_chr1.txt 
+  868  vim Maize_chr1.txt 
+  869  { head -n 1 Maize_sorted.txt && awk '$2 == 1' Maize_sorted.txt; } > Maize_chr1.txt 
+  870  vim Maize_chr1.txt 
+  871  wc Maize_chr1.txt 
+  872  awk -F "\t" '{print NF; exit}' Maize_chr1.txt 
+  873  { head -n 1 Maize_sorted.txt && awk '$2 == 2' Maize_sorted.txt; } > Maize_chr2.txt 
+  874  { head -n 1 Maize_sorted.txt && awk '$2 == 3' Maize_sorted.txt; } > Maize_chr3.txt 
+  875  { head -n 1 Maize_sorted.txt && awk '$2 == 4' Maize_sorted.txt; } > Maize_chr4.txt 
+  876  { head -n 1 Maize_sorted.txt && awk '$2 == 5' Maize_sorted.txt; } > Maize_chr5.txt 
+  877  { head -n 1 Maize_sorted.txt && awk '$2 == 6' Maize_sorted.txt; } > Maize_chr6.txt 
+  878  { head -n 1 Maize_sorted.txt && awk '$2 == 7' Maize_sorted.txt; } > Maize_chr7.txt 
+  879  { head -n 1 Maize_sorted.txt && awk '$2 == 8' Maize_sorted.txt; } > Maize_chr8.txt 
+  880  { head -n 1 Maize_sorted.txt && awk '$2 == 9' Maize_sorted.txt; } > Maize_chr9.txt 
+  881  { head -n 1 Maize_sorted.txt && awk '$2 == 10' Maize_sorted.txt; } > Maize_chr10.txt 
+  882  { head -n 1 Maize_sorted.txt && awk '$2 == multiple' Maize_sorted.txt; } > Maize_chrm.txt 
+  883  { head -n 1 Maize_sorted.txt && awk '$2 == unknown' Maize_sorted.txt; } > Maize_chru.txt 
+  884  ll
+  885  wc Maize_chr1.txt Maize_chr2.txt Maize_chr3.txt Maize_chr4.txt Maize_chr5.txt Maize_chr6.txt Maize_chr7.txt Maize_chr8.txt Maize_chr9.txt Maize_chr10.txt Maize_chrm.txt Maize_chru.txt 
+  886  awk -F "\t" '{print NF; exit}' Maize_chr1.txt Maize_chr2.txt Maize_chr3.txt Maize_chr4.txt Maize_chr5.txt Maize_chr6.txt Maize_chr7.txt Maize_chr8.txt Maize_chr9.txt Maize_chr10.txt Maize_chrm.txt Maize_chru.txt
+  887  awk -F "\t" '{print NF; exit}' Maize_chru.txt
+  888  vim Maize_chru.txt 
+  889  rm -rf Maize_chru.txt Maize_chrm.txt 
+  890  ls
+  891  { head -n 1 Maize_sorted.txt && awk '$2 == "multiple"' Maize_sorted.txt; } > Maize_chrm.txt 
+  892  wc Maize_chrm.txt 
+  893  { head -n 1 Maize_sorted.txt && awk '$2 == "unknown"' Maize_sorted.txt; } > Maize_chru.txt 
+  894  wc Maize_chru.txt 
+  895  awk -F "\t" '{print NF; exit}' Maize_chru.txt Maize_chrm.txt 
+  896  Maize_chr1.txt Maize_chr2.txt Maize_chr3.txt Maize_chr4.txt Maize_chr5.txt Maize_chr6.txt Maize_chr7.txt Maize_chr8.txt
+  897   Maize_chr9.txt Maize_chr10.txt Maize_chrm.txt Maize_chru.txtvim Maize_chr1.txt 
+  898  vim Maize_chr1.txt 
+  899  (head -n 1 Maize_chr1.txt && tail -n +2 Maize_chr1.txt | sort -k1,1) > Maize_chr1_de.txt
+  900  wc Maize_chr1_de.txt 
+  901  awk -F "\t" '{print NF; exit}' Maize_chr1_de.txt 
+  902  vim Maize_chr1_de.txt 
+  903  (head -n 1 Maize_chr1.txt && tail -n +2 Maize_chr1.txt | sort -k1) > Maize_chr1_de.txt
+  904  vim Maize_chr1_de.txt 
+  905  (head -n 1 Maize_chr1.txt && tail -n +2 Maize_chr1.txt | sort -k1 -r) > Maize_chr1_de.txt
+  906  vim Maize_chr1_de.txt 
+  907  (head -n 1 Maize_chr2.txt && tail -n +2 Maize_chr1.txt | sort -k1 -r) > Maize_chr2_de.txt
+  908  wc Maize_chr1_de.txt 
+  909  awk -F "\t" '{print NF; exit}' Maize_chr1_de.txt 
+  910  (head -n 1 Maize_chr2.txt && tail -n +2 Maize_chr3.txt | sort -k1 -r) > Maize_chr3_de.txt
+  911  (head -n 1 Maize_chr2.txt && tail -n +2 Maize_chr4.txt | sort -k1 -r) > Maize_chr4_de.txt
+  912  (head -n 1 Maize_chr2.txt && tail -n +2 Maize_chr5.txt | sort -k1 -r) > Maize_chr5_de.txt
+  913  (head -n 1 Maize_chr2.txt && tail -n +2 Maize_chr6.txt | sort -k1 -r) > Maize_chr6_de.txt
+  914  (head -n 1 Maize_chr2.txt && tail -n +2 Maize_chr7.txt | sort -k1 -r) > Maize_chr7_de.txt
+  915  (head -n 1 Maize_chr2.txt && tail -n +2 Maize_chr8.txt | sort -k1 -r) > Maize_chr8_de.txt
+  916  (head -n 1 Maize_chr2.txt && tail -n +2 Maize_chr9.txt | sort -k1 -r) > Maize_chr9_de.txt
+  917  (head -n 1 Maize_chr2.txt && tail -n +2 Maize_chr10.txt | sort -k1 -r) > Maize_chr10_de.txt
+  918  (head -n 1 Maize_chr2.txt && tail -n +2 Maize_chru.txt | sort -k1 -r) > Maize_chru_de.txt
+  919  (head -n 1 Maize_chr2.txt && tail -n +2 Maize_chrm.txt | sort -k1 -r) > Maize_chrm_de.txt
+  920  wc Maize_chr3_de.txt Maize_chr4_de.txt Maize_chr5_de.txt Maize_chr6_de.txt Maize_chr7_de.txt Maize_chr8_de.txt Maize_chr9_de.txt Maize_chr10_de.txt Maize_chrm_de.txt Maize_chru_de.txt
+  921  wc Maize_chr1_de.txt Maize_chr2_de.txt 
+  922  (head -n 1 Maize_chr2.txt && tail -n +2 Maize_chr2.txt | sort -k1 -r) > Maize_chr2_de.txt
+  923  wc Maize_chr2_de.txt 
+  924  vim Maize_chru_de.txt 
+  925  Maize_chr3_de.txtll
+  926  ll
+  927  vim Maize_chr1.txt 
+  928  less Maize_chr1.txt 
+  929  sed 's/?/-/g' Maize_chr1_de.txt > Maize_chr1_desed.txt
+  930  wc Maize_chr1_desed.txt
+  931  awk -F "\t" '{print NF; exit}' Maize_chr1_desed.txt 
+  932  vim Maize_chr1_desed.txt
+  933  sed 's/?/-/g' Maize_chr2_de.txt > Maize_chr2_desed.txt
+  934  sed 's/?/-/g' Maize_chr3_de.txt > Maize_chr3_desed.txt
+  935  sed 's/?/-/g' Maize_chr4_de.txt > Maize_chr4_desed.txt
+  936  sed 's/?/-/g' Maize_chr5_de.txt > Maize_chr5_desed.txt
+  937  sed 's/?/-/g' Maize_chr6_de.txt > Maize_chr6_desed.txt
+  938  sed 's/?/-/g' Maize_chr7_de.txt > Maize_chr7_desed.txt
+  939  sed 's/?/-/g' Maize_chr8_de.txt > Maize_chr8_desed.txt
+  940  sed 's/?/-/g' Maize_chr9_de.txt > Maize_chr9_desed.txt
+  941  sed 's/?/-/g' Maize_chr10_de.txt > Maize_chr10_desed.txt
+  942  wc Maize_chr1_desed.txt Maize_chr2_desed.txt Maize_chr3_desed.txt Maize_chr4_desed.txt Maize_chr5_desed.txt Maize_chr6_desed.txt Maize_chr7_desed.txt Maize_chr8_desed.txt Maize_chr9_desed.txt Maize_chr10_desed.txt
+  943  awk -F "\t" '{print NF; exit}' Maize_chr1_desed.txt Maize_chr2_desed.txt Maize_chr3_desed.txt Maize_chr4_desed.txt Maize_chr5_desed.txt Maize_chr6_desed.txt Maize_chr7_desed.txt Maize_chr8_desed.txt Maize_chr9_desed.txt Maize_chr10_desed.txt
+  944  cp Maize_chr1_desed.txt Maize_chr2_desed.txt Maize_chr3_desed.txt Maize_chr4_desed.txt Maize_chr5_desed.txt Maize_chr6_desed.txt Maize_chr7_desed.txt Maize_chr8_desed.txt Maize_chr9_desed.txt Maize_chr10_desed.txt Maize_decreasing[200~[oamaechi@nova UNIX]$ sed 's/?/-/g' Maize_chr1_de.txt > Maize_chr1_desed.txt
+  945  [oamaechi@nova UNIX]$ wc Maize_chr1_desed.txt
+  946     156 245856 988210 Maize_chr1_desed.txt
+  947  [oamaechi@nova UNIX]$ awk -F "\t" '{print NF; exit}' Maize_chr1_desed.txt
+  948  1576
+  949  [oamaechi@nova UNIX]$ vim Maize_chr1_desed.txt
+  950  [oamaechi@nova UNIX]$ sed 's/?/-/g' Maize_chr2_de.txt > Maize_chr2_desed.txt
+  951  [oamaechi@nova UNIX]$ sed 's/?/-/g' Maize_chr3_de.txt > Maize_chr3_desed.txt
+  952  [oamaechi@nova UNIX]$ sed 's/?/-/g' Maize_chr4_de.txt > Maize_chr4_desed.txt
+  953  [oamaechi@nova UNIX]$ sed 's/?/-/g' Maize_chr5_de.txt > Maize_chr5_desed.txt
+  954  [oamaechi@nova UNIX]$ sed 's/?/-/g' Maize_chr6_de.txt > Maize_chr6_desed.txt
+  955  [oamaechi@nova UNIX]$ sed 's/?/-/g' Maize_chr7_de.txt > Maize_chr7_desed.txt
+  956  [oamaechi@nova UNIX]$ sed 's/?/-/g' Maize_chr8_de.txt > Maize_chr8_desed.txt
+  957  [oamaechi@nova UNIX]$ sed 's/?/-/g' Maize_chr9_de.txt > Maize_chr9_desed.txt
+  958  ll
+  959  vim Maize_chr9_desed.txt 
+  960  sed 's/?/-/g' Maize_chr1_de.txt > Maize_chr1_desed.txt
+  961  ll
+  962  wc Maize_chr1_desed.txt 
+  963   sed 's/?/-/g' Maize_chr2_de.txt > Maize_chr2_desed.txt
+  964  sed 's/?/-/g' Maize_chr3_de.txt > Maize_chr3_desed.txt
+  965   sed 's/?/-/g' Maize_chr4_de.txt > Maize_chr4_desed.txt
+  966  sed 's/?/-/g' Maize_chr5_de.txt > Maize_chr5_desed.txt
+  967   sed 's/?/-/g' Maize_chr6_de.txt > Maize_chr6_desed.txt
+  968   sed 's/?/-/g' Maize_chr7_de.txt > Maize_chr7_desed.txt
+  969  sed 's/?/-/g' Maize_chr8_de.txt > Maize_chr8_desed.txt
+  970   sed 's/?/-/g' Maize_chr9_de.txt > Maize_chr9_desed.txt
+  971  sed 's/?/-/g' Maize_chr10_de.txt > Maize_chr10_desed.txt
+  972  ll
+  973  wc Maize_chr1_desed.txt Maize_chr2_desed.txt Maize_chr3_desed.txt Maize_chr4_desed.txt Maize_chr5_desed.txt Maize_chr6_desed.txt Maize_chr7_desed.txt Maize_chr8_desed.txt Maize_chr9_desed.txt Maize_chr10_desed.txt
+  974  awk -F "\t" '{print NF; exit}' Maize_chr1_desed.txt Maize_chr2_desed.txt Maize_chr3_desed.txt Maize_chr4_desed.txt Maize_chr5_desed.txt Maize_chr6_desed.txt Maize_chr7_desed.txt Maize_chr8_desed.txt Maize_chr9_desed.txt Maize_chr10_desed.txt
+  975  mkdir Maize_descend
+  976  ll
+  977  mv Maize_chr1_desed.txt Maize_chr2_desed.txt Maize_chr3_desed.txt Maize_chr4_desed.txt Maize_chr5_desed.txt Maize_chr6_desed.txt Maize_chr7_desed.txt Maize_chr8_desed.txt Maize_chr9_desed.txt Maize_chr10_desed.txt Maize_descend/
+  978  ll
+  979  cd Maize_descend/
+  980  ll
+  981  cd ..
+  982  mkdir Maize_ascend
+  983  mkdir Maize_de
+  984  mv Maize_chr3_de.txt Maize_chr4_de.txt Maize_chr5_de.txt Maize_chr6_de.txt Maize_chr7_de.txt Maize_chr8_de.txt Maize_chr9_de.txt Maize_chr10_de.txt Maize_chrm_de.txt Maize_chru_de.txt Maize_de
+  985  ll
+  986  mv Maize_chr1_de.txt Maize_chr2_de.txt Maize_de
+  987  ll
+  988  mv Maize_chr1.txt Maize_chr2.txt Maize_chr3.txt Maize_chr4.txt Maize_chr5.txt Maize_chr6.txt Maize_chr7.txt Maize_chr8.txt Maize_chr9.txt Maize_chr10.txt Maize_chrm.txt Maize_chru.txt Maize_ascend/
+  989  ll
+  990  rm -rf ZMMIL.txt 
+  991  history > history16.txt
+  992  cat history16.txt 
+  993  cd BCB546_Spring2025/assignments/UNIX_Assignment/UNIX/
+  994  ls
+  995  wc transposed_1head.txt
+  996  ls 
+  997  cd
+  998  ls
+  999  cat history1.txt 
+ 1000  cd BCB546_Spring2025/assignments/UNIX_Assignment/UNIX/
+ 1001  ls
+ 1002  sed 's/Group/SNP_ID/g' trans1head.txt > transgroup_txt
+ 1003  sed 's/Group/SNP_ID/g' transposed_1head.txt > transgroup_txt
+ 1004  vim transgroup_txt 
+ 1005  sed 's/Group/SNP_ID/g' transposed_1header.txt > transgroup_txt
+ 1006  head -n 1 transgroup_txt 
+ 1007  vim transposed_1header.txt
+ 1008  vim transgroup_txt 
+ 1009  sed 's/Group/SNP_ID/g' trans1head.txt > transgroup_txt
+ 1010  join -1 1 -2 1 -t $'\t' snp_position.txt transgroup.txt > transjoin.txt
+ 1011  ls
+ 1012  join -1 1 -2 1 -t $'\t' snp_position.txt transgroup_txt > transjoin.txt 
+ 1013  wc transjoin.txt 
+ 1014  join -1 1 -2 1 -t $'\t' snp_position.txt transgroup_txt > transjoin.txt 
+ 1015  wc transjoin.txt 
+ 1016  join -1 1 -2 1 -t $'\t' snp_position.txt transgroup.txt > transjoin.txt 
+ 1017  sed 's/Group/SNP_ID/g' trans1head.txt > transgroup.txt
+ 1018  sed 's/Group/SNP_ID/g' transposed_1head.txt > transgroup_txt
+ 1019  sed 's/Group/SNP_ID/g' transposed_1head.txt > transgroup.txt
+ 1020  wc transgroup.txt 
+ 1021  join -1 1 -2 1 -t $'\t' snp_position.txt transgroup.txt > transjoin.txt 
+ 1022  wc transjoin.txt 
+ 1023  awk -F "\t" '{print NF; exit}' transjoin.txt
+ 1024  vim transjoin.txt 
+ 1025  awk '{for(i=1;i<=NF;i++) if ($i == "ZMMIL") print "Found at column " i}' transjoin.txt
+ 1026  awk '{for(i=1;i<=NF;i++) if ($i == "ZMMLR") print "Found at column " i}' transjoin.txt
+ 1027  awk '{for(i=1;i<=NF;i++) if ($i == "ZMMMR") print "Found at column " i}' transjoin.txt
+ 1028  awk '{for(i=1;i<=NF;i++) if($i == "ZMMIL") count++} END{print count}' transjoin.txt 
+ 1029  awk '{for(i=1;i<=NF;i++) if($i == "ZMMLR") count++} END{print count}' transjoin.txt 
+ 1030  awk '{for(i=1;i<=NF;i++) if($i == "ZMMMR") count++} END{print count}' transjoin.txt 
+ 1031  cut -d $'\t' -f1,3,4,2508-2797,1225-2480,2481-2507 transjoin.txt > M.txt
+ 1032  ll
+ 1033  wc M.txt 
+ 1034  tail -n +6 M.txt | awk -F "\t" '{print NF; exit}'
+ 1035  vim M.txt 
+ 1036  ls
+ 1037  vim maize_sort.txt 
+ 1038  sort -k3,3n M.txt > Msort.txt
+ 1039  wc Msort.txt 
+ 1040  tail -n +6 Msort.txt | awk -F "\t" '{print NF; exit}'
+ 1041  vim Msort.txt 
+ 1042  (head -n 1 maize.txt && tail -n +2 M.txt | sort -k3,3n) > Msorted.txt
+ 1043  (head -n 1 M.txt && tail -n +2 M.txt | sort -k3,3n) > Msorted.txt
+ 1044  wc Msorted
+ 1045  wc Msorted.txt 
+ 1046  tail -n +6 Msorted.txt | awk -F "\t" '{print NF; exit}'
+ 1047  vim Msorted.txt 
+ 1048  grep -v "^#" Msorted.txt | cut -f2 | sort | uniq -c
+ 1049  { head -n 1 Msorted.txt && awk '$2 == 1' Msorted.txt; } > Mchr1.txt
+ 1050  wc Mchr1.txt 
+ 1051  tail -n +6 Mchr1.txt | awk -F "\t" '{print NF; exit}'
+ 1052  vim Mchr1.txt 
+ 1053  { head -n 1 Msorted.txt && awk '$2 == 2' Msorted.txt; } > Mchr2.txt
+ 1054  { head -n 1 Msorted.txt && awk '$2 == 3' Msorted.txt; } > Mchr3.txt
+ 1055  { head -n 1 Msorted.txt && awk '$2 == 4' Msorted.txt; } > Mchr4.txt
+ 1056  { head -n 1 Msorted.txt && awk '$2 == 5' Msorted.txt; } > Mchr5.txt
+ 1057  { head -n 1 Msorted.txt && awk '$2 == 6' Msorted.txt; } > Mchr6.txt
+ 1058  { head -n 1 Msorted.txt && awk '$2 == 7' Msorted.txt; } > Mchr7.txt
+ 1059  { head -n 1 Msorted.txt && awk '$2 == 8' Msorted.txt; } > Mchr8.txt
+ 1060  { head -n 1 Msorted.txt && awk '$2 == 9' Msorted.txt; } > Mchr9.txt
+ 1061  { head -n 1 Msorted.txt && awk '$2 == 10' Msorted.txt; } > Mchr10.txt
+ 1062  { head -n 1 Msorted.txt && awk '$2 == "multiple"' Msorted.txt; } > Mchrm.txt
+ 1063  { head -n 1 Msorted.txt && awk '$2 == "unknown"' Msorted.txt; } > Mchru.txt
+ 1064  wc Mchr1.txt Mchr2.txt Mchr3.txt Mchr4.txt Mchr5.txt Mchr6.txt Mchr7.txt Mchr8.txt Mchr9.txt Mchr10.txt Mchrm.txt Mchru.txt 
+ 1065  awk -F "\t" '{print NF; exit}' Mchr1.txt 
+ 1066  awk -F "\t" '{print NF; exit}' Mchr1.txt Mchr2.txt Mchr3.txt Mchr4.txt Mchr5.txt Mchr6.txt Mchr7.txt Mchr8.txt Mchr9.txt Mchr10.txt Mchrm.txt Mchru.txt 
+ 1067  Vim Mchr1.txt 
+ 1068  vim Mchr1.txt 
+ 1069  vim Mchr10.txt 
+ 1070  vim Mchrm.txt 
+ 1071  vim Mchr2.txt 
+ 1072  vim Mchr3.txt 
+ 1073  vim Mchr4.txt 
+ 1074  vim Mchru.txt 
+ 1075  sed 's/?/-/g' Msorted.txt > M-sorted.txt
+ 1076  vim M-sorted.txt 
+ 1077  wc M-sorted.txt 
+ 1078  awk -F "\t" '{print NF; exit}' M-sorted.txt 
+ 1079   { head -n 1 M-sorted.txt && awk '$2 == 8' M-sorted.txt; } > Mchr8_de.txt
+ 1080  vim Mchr8_de.txt
+ 1081  wc Mchr8_de.txt
+ 1082  awk -F "\t" '{print NF; exit}' Mchr8_de.txt 
+ 1083  ll
+ 1084  mkdir M_ascend
+ 1085  ll
+ 1086  mv Mchr1.txt Mchr2.txt Mchr3.txt Mchr4.txt Mchr5.txt Mchr6.txt Mchr7.txt Mchr8.txt Mchr9.txt Mchr10.txt Mchrm.txt Mchru.txt M_ascend
+ 1087  ll
+ 1088  cd M_ascend/
+ 1089  ll
+ 1090  cd ..
+ 1091  mkdir M_descend 
+ 1092  ll
+ 1093  mv M-sorted.txt M_descend/
+ 1094  cd M_descend/
+ 1095  ls
+ 1096  { head -n 1 M-sorted.txt && awk '$2 == 8' M-sorted.txt; } > Mchr8_de.txt
+ 1097* { head -n 1 M-sorted.txt && awk '$2 == 6' M-sorted.txt; } > Mchr6_de.txt
+ 1098  ls
+ 1099  rm -rf Mchr7_de.txt Mchr8_de.txt 
+ 1100  (head -n 1 M-sorted.txt && tail -n +2 M-sort.txt | sort -k3,3n -r) > Mdsorted.txt
+ 1101  (head -n 1 M-sorted.txt && tail -n +2 M-sorted.txt | sort -k3,3n -r) > Mdsorted.txt
+ 1102  wc Mdsorted.txt 
+ 1103  awk -F "\t" '{print NF; exit}' Mdsorted.txt
+ 1104  vim Mdsorted.txt 
+ 1105  (head -n 1 M-sorted.txt && tail -n +2 M-sorted.txt | sort -k3,3nr) > Mdsorted.txt
+ 1106  vim Mdsorted.txt 
+ 1107  ls
+ 1108  ll
+ 1109  { head -n 1 Mdsorted.txt && awk '$2 == 7' Mdsorted.txt; } > Mchr7_de.txt
+ 1110  { head -n 1 Mdsorted.txt && awk '$2 == 8' Mdsorted.txt; } > Mchr8_de.txt
+ 1111  { head -n 1 Mdsorted.txt && awk '$2 == 1' Mdsorted.txt; } > Mchr9_de.txt
+ 1112  { head -n 1 Mdsorted.txt && awk '$2 == 9' Mdsorted.txt; } > Mchr9_de.txt
+ 1113  { head -n 1 Mdsorted.txt && awk '$2 == 10' Mdsorted.txt; } > Mchr10_de.txt
+ 1114  { head -n 1 Mdsorted.txt && awk '$2 == 1' Mdsorted.txt; } > Mchr1_de.txt
+ 1115  { head -n 1 Mdsorted.txt && awk '$2 == 2' Mdsorted.txt; } > Mchr2_de.txt
+ 1116  { head -n 1 Mdsorted.txt && awk '$2 == 3' Mdsorted.txt; } > Mchr3_de.txt
+ 1117  { head -n 1 Mdsorted.txt && awk '$2 == 4' Mdsorted.txt; } > Mchr4_de.txt
+ 1118  { head -n 1 Mdsorted.txt && awk '$2 == 5' Mdsorted.txt; } > Mchr5_de.txt
+ 1119  { head -n 1 Mdsorted.txt && awk '$2 == 6' Mdsorted.txt; } > Mchr6_de.txt
+ 1120  ll
+ 1121  wc Mchr1_de.txt Mchr10_de.txt Mchr2_de.txt Mchr3_de.txt Mchr4_de.txt Mchr5_de.txt Mchr6_de.txt Mchr7_de.txt Mchr8_de.txt Mchr9_de.txt
+ 1122  awk -F "\t" '{print NF; exit}' Mchr1_de.txt Mchr10_de.txt Mchr2_de.txt Mchr3_de.txt Mchr4_de.txt Mchr5_de.txt Mchr6_de.txt Mchr7_de.txt Mchr8_de.txt Mchr9_de.txt
+ 1123  vim Mchr1_de.txt 
+ 1124  vim Mchr10_de.txt 
+ 1125  vim Mchr2_de.txt 
+ 1126  history > history6.txt
