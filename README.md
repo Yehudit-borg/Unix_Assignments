@@ -2,7 +2,7 @@
 
 This shows an outline of the files and folders in this repository.
 
-* `UNIX_Assignment_Template.md` : This provides a breakdown of the codes used and their overall description.
+* `UNIX_codes.md` : This provides a breakdown of the codes used and their overall description.
 * `Teosinte`: This contains the all intermediate and final files created during the data procession stage for sorting and extracting the groups needed. 
     `T_ascend` : This folder contains 12 files of all chromosomes in ascending order of their position values.
     `T_descend` : This contains files of chromosomes in descending order of their position values except for those with multiple and unkwown identifiers.
